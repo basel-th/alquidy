@@ -755,6 +755,8 @@ cursor: pointer;
 @media(max-width:992px){
   .features .container .content .box {
     padding: 50px;
+    height: 30px;
+    width: 30px;
     width: auto;
   }
   
@@ -763,6 +765,14 @@ cursor: pointer;
   background-image: linear-gradient(to bottom, #A72951 , #751332);
   color: white;
   
+}
+
+@media(max-width:992px){
+  .features .container .content .box img{
+    height: 20px;
+    width: 20px;
+  }
+
 }
 .features .container .content .box img:first-child{
    display: block;
@@ -782,7 +792,12 @@ cursor: pointer;
   font-weight: 400;
 }
 
-
+@media(max-width:992px){
+  .features .container .content .box p{
+    font-size: 10px;
+    padding: 0;
+  }
+}
 
 /*  END FEATURES BY BASEL AHMED  */
 
@@ -1687,3 +1702,145 @@ cursor: pointer;
 }
 
 /*  END DEATILES NEWS BY BASEL AHMED  */
+
+
+/*  START DETRILES PATRTENS BY BASEL AHMED */
+.deatilespatartens-page{
+  padding-top: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.deatilespatartens-page .container{
+  padding-top: 30px;
+  padding: 10px 100px;
+  position: relative;
+  
+}
+.deatilespatartens-page .container h3{
+   font-size: 30px;
+   font-weight: bold;
+   padding: 20px  0 ;
+   color: var(--main-color);
+}
+.deatilespatartens-page .container .image{
+  background-color: var(--main-color);
+  height: auto;
+  width: auto;
+  border-radius: 40px 0  40px 0 ;
+  -webkit-border-radius: 40px 0  40px 0 ;
+  -moz-border-radius: 40px 0  40px 0 ;
+  -ms-border-radius: 40px 0  40px 0 ;
+  -o-border-radius: 40px 0  40px 0 ;
+  padding: 20px;
+ z-index: 4;
+}
+.deatilespatartens-page .container .image img{
+  height: 100%;
+  width: auto;
+  border-radius: 40px 0  40px 0;
+  -webkit-border-radius: 40px 0  40px 0;
+  -moz-border-radius: 40px 0  40px 0;
+  -ms-border-radius: 40px 0  40px 0;
+  -o-border-radius: 40px 0  40px 0;
+  margin-bottom: 13px;
+}
+
+  .deatilespatartens-page .container span{
+    background-color: #751332;
+    color: white;
+    margin-top: 20px;
+    padding: 10px  30px;
+    border-radius: 0px 0px 50px  50px ;
+    -webkit-border-radius: 0px 0px 50px  50px ;
+    -moz-border-radius: 0px 0px 50px  50px ;
+    -ms-border-radius: 0px 0px 50px  50px ;
+    -o-border-radius: 0px 0px 50px  50px ;
+    box-shadow: 0px 12px 13px #00000063;
+    z-index: 3;
+}
+  .deatilespatartens-page .container p{
+    padding: 30px  10px;
+    margin-top: 40px;
+    font-size: 24px;
+    text-align: start;
+  }
+  .deatilespatartens-page .container .contents{
+    text-align: start;
+    padding-bottom: 40px;
+  }
+  .deatilespatartens-page .container .contents h3{
+    color: black;
+    padding-top: 10px;
+  }
+  .deatilespatartens-page .container .contents ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  }
+  .deatilespatartens-page .container .contents ul li{
+    margin: 10px 30px;
+    
+  }
+  .deatilespatartens-page .container .contents ul li img{
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+  }
+
+/*  END DETRILES PATRTENS BY BASEL AHMED */
+
+
+/*  STARTS ABOUT US PAGE BY BASEL AHMED */
+  .aboutuspage{
+    padding-top: 5%;
+    text-align: center;
+    
+  }
+  .aboutuspage .container{
+    padding: 50px 10px;
+  }
+  .aboutuspage .container h3{
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+  }
+  .aboutuspage .container .content{
+    height: auto;
+    display: flex;
+    
+  }
+  .aboutuspage .container .content .right {
+    width: 50%;
+    height: auto;
+    padding: 30px;
+  }
+  .aboutuspage .container .content .right .image {
+    
+  }
+  .aboutuspage .container .content .right .image img {
+    height: 50px;
+    width: 50px;
+  }
+  .aboutuspage .container .content .left {
+    width: 50%;
+    padding: 30px;
+  }
+  .aboutuspage .container .content .left img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+
+  .aboutuspage .container .contentdown {
+    padding: 30px;
+  }
+  .aboutuspage .container .contentdown img {
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+  }
+  
+ 
+/*  END ABOUT US PAGE BY BASEL AHMED */
