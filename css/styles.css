@@ -111,7 +111,7 @@ a{
   -moz-border-radius: 40px 0px 0 40px;
   -ms-border-radius: 40px 0px 0 40px;
   -o-border-radius: 40px 0px 0 40px;
-  padding: 2px 30px;
+  padding: 3px 30px;
 }
 @media(max-width:992px){
   .header .containe .logo  {
@@ -273,8 +273,8 @@ cursor: pointer;
 }
 .header .containe  .icons i{
   padding: 0px 5px;
-}
 
+}
 
 
 /*  END HEADER  BY BASEL AHMED  */
@@ -319,12 +319,19 @@ cursor: pointer;
   width: 100%;
   z-index: 2;
 }
+.slider-container2 .side-item #moiblebeg{
+ display: none;
+}
 
 @media(max-width:992px){
-  .slider-container2 .side-item img{
+  .slider-container2 .side-item img:first-child{
+    display: none;
+  }
+  .slider-container2 .side-item #moiblebeg{
     height: 100%;
     width: 100%;
     z-index: 2;
+    display: block;
   }
 }
 .slider-container2 .side-item .text{
@@ -610,6 +617,7 @@ cursor: pointer;
   .servers .content .box{
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 0;
   }
 }
 
@@ -1978,6 +1986,17 @@ cursor: pointer;
   padding: 30px;
   font-size: 20px;
 }
+
+@media(max-width:992px){
+  .detailesnews .container p{
+    background-color: var(--main-color);
+    margin-top: 10px;
+    color: white;
+    width: 100%;
+
+  }
+
+}
 .detailesnews .container .more_news{
   padding: 40px 0;
   
@@ -2052,6 +2071,14 @@ cursor: pointer;
     margin-top: 40px;
     font-size: 24px;
     text-align: start;
+  }
+  
+  @media(max-width:992px){
+    .deatilespatartens-page .container p{
+      background-color: var(--main-color);
+      color: white;
+      padding: 0;
+    }
   }
   .deatilespatartens-page .container .contents{
     text-align: start;
