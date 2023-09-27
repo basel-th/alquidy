@@ -725,8 +725,8 @@ cursor: pointer;
     overflow-y: auto; */
    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    padding: 40px;
-    gap: 30px; 
+    padding: 20px 0px;
+    gap: 20px; 
   }
   /* .features .container .content::-webkit-scrollbar{
     /* display: none; */
@@ -754,10 +754,10 @@ cursor: pointer;
 
 @media(max-width:992px){
   .features .container .content .box {
-    padding: 50px;
-    height: 30px;
-    width: 30px;
+    height: 140px;
     width: auto;
+    padding: 10;
+
   }
   
 }
@@ -769,8 +769,9 @@ cursor: pointer;
 
 @media(max-width:992px){
   .features .container .content .box img{
-    height: 20px;
-    width: 20px;
+    height: 45px;
+    width: 45px;
+    margin-bottom: 5px;
   }
 
 }
@@ -794,9 +795,10 @@ cursor: pointer;
 
 @media(max-width:992px){
   .features .container .content .box p{
-    font-size: 10px;
+    font-size: 16px;
     padding: 0;
   }
+ 
 }
 
 /*  END FEATURES BY BASEL AHMED  */
@@ -811,6 +813,13 @@ cursor: pointer;
 .video .container {
   
   padding: 50px;
+}
+
+@media(max-width:992px){
+  .video .container {
+    padding: 15px;
+  }
+  
 }
 .video .container .cover {
   position: relative;
@@ -1016,6 +1025,7 @@ cursor: pointer;
     height: 470px;
     justify-content: center;
     align-items: center;
+    padding-right:  20px;
   }
   
   @media(max-width:992px){
@@ -1058,7 +1068,7 @@ cursor: pointer;
   .news .container .content .side-container  div .box{
     background-color: var(--main-color);
     height: 430px;
-    width: 580px;
+    width: 575px;
     display: flex;
     flex-direction: column;
     padding: 0px;
@@ -1261,7 +1271,6 @@ cursor: pointer;
   display: flex;
   align-items: center;
   /* -webkit-overflow-scrolling: touch; */
-  background-color: #009688;
   padding: 50px 10px;
   
   
@@ -1286,8 +1295,8 @@ cursor: pointer;
 .patartens .box {
   display: inline-block;
   background-color: white;
-  height: 167px;
-  width: 250px;
+  height: 240px;
+  width: 240px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -1731,7 +1740,10 @@ cursor: pointer;
 
 .page-news .container .controlers .nextNews> img{
   transform: rotate(180deg);
-
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
 .page-news .container .controlers .nextNews > img:first-child {
  opacity: 0.4;  
@@ -1786,17 +1798,25 @@ cursor: pointer;
   padding-top: 8%;
   text-align: center;
 }
-.page-patartens h2{
+.page-patartens .container h2{
   color:  black;
   font-size: 30px;
   font-weight: bold;
+  padding-top: 30px;
 }
-.page-patartens .container{
+
+.page-patartens .silde-content .silder { 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 20px;
   padding: 30px 0;
+  display: none;
 }
+.page-patartens .silde-content .silder.showPatrtens 
+{
+  display: grid;
+  opacity: 1;
+} 
 
 .page-patartens .container .box {
   display: inline-block;
@@ -1811,19 +1831,106 @@ cursor: pointer;
   margin: 0px 10px;
   border: 2px solid var(--main-color);
   cursor: pointer;
-
 }
 .page-patartens .container .box img{
-  height: auto;
-  width: auto;
+  height: 150px;
+  width: 150px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
 }
 .page-patartens .controlers{
-  background-color:#009688;
   display: flex;
   justify-content: center;
 }
 .page-patartens .controlers ul{
   display: flex;
+}
+
+.page-patartens .container .controlers  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2% 40%;
+}
+@media(max-width:992px){
+  .page-patartens .container .controlers  {
+    width: auto;
+    margin: 2%  0  ;
+    padding: 10px 90px;
+  }
+
+}
+
+.page-patartens .container .controlers img 
+{
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  
+}
+
+.page-patartens .container .controlers  .pervNews > img:first-child {
+  opacity: 0.4;  
+}
+.page-patartens .container .controlers  .pervNews:hover > img:first-child {
+  display: none;
+}
+.page-patartens .container .controlers  .pervNews> img:last-child {
+  display: none;
+
+}
+.page-patartens .container .controlers  .pervNews:hover > img:last-child {
+  display: block;
+}
+
+.page-patartens .container .controlers .nextNews> img{
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+.page-patartens .container .controlers .nextNews > img:first-child {
+ opacity: 0.4;  
+
+}
+.page-patartens .container .controlers .nextNews:hover > img:first-child {
+  display: none;
+}
+.page-patartens .container .controlers .nextNews> img:last-child {
+  display: none;
+}
+.page-patartens .container .controlers .nextNews:hover > img:last-child {
+  display: block;
+}
+
+
+.page-patartens .container .controlers  .indicatorsnews {
+  width: 100%;
+}
+
+.page-patartens .container .controlers  .indicatorsnews ul{
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+.page-patartens .container .controlers .indicatorsnews ul li{
+  display: inline-block;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0 2px;
+  cursor: pointer;
+}
+.page-patartens .container .controlers  .indicatorsnews ul li.activePatrtens{
+  color: var(--main-color);
+  font-size: 28px;
+  font-weight: bold;
+
 }
 
 

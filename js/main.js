@@ -252,7 +252,7 @@ nextbtn.addEventListener("click", ()=>
 {
   scrollcontainer.style.scrollBehavior ="smooth"
   
-  scrollcontainer.scrollLeft += 900;
+  scrollcontainer.scrollLeft += 990;
   
   console.log("slmslm");
 }
@@ -260,7 +260,7 @@ nextbtn.addEventListener("click", ()=>
 backbtn.addEventListener("click", ()=>
 { 
    scrollcontainer.style.scrollBehavior ="smooth"
-  scrollcontainer.scrollLeft -= 900; }
+  scrollcontainer.scrollLeft -= 990; }
 );
 
 
