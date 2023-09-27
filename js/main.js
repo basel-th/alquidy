@@ -1,4 +1,6 @@
 
+
+
 let IdIcon = document.getElementById("icon") ;
 let myIdElement = document.getElementById("show_list") ;
 
@@ -236,6 +238,35 @@ boxessubcontent[boxcontitem -  1].classList.toggle('hidden');
 
   // STRAT NEWS BASEL AHMED
 
+  let scrollcontainer = document.querySelector(".side-container");
+  let backbtn = document.getElementById("pervnews");
+  let nextbtn = document.getElementById("nextnews");
+
+
+  scrollcontainer.addEventListener("wheel",(evt)=>{
+     evt.preventDefault();
+     scrollcontainer.scrollLeft += evt.deltY;
+});
+
+nextbtn.addEventListener("click", ()=>
+{
+  scrollcontainer.style.scrollBehavior ="smooth"
+  
+  scrollcontainer.scrollLeft += 900;
+  
+  console.log("slmslm");
+}
+);
+backbtn.addEventListener("click", ()=>
+{ 
+   scrollcontainer.style.scrollBehavior ="smooth"
+  scrollcontainer.scrollLeft -= 900; }
+);
+
+
+
+
+
     var sildernews = Array.from(document.querySelectorAll('.news .side-container .side-box'));
 
     var silderCountNews = sildernews.length;
@@ -291,4 +322,8 @@ boxessubcontent[boxcontitem -  1].classList.toggle('hidden');
 
 
     
- 
+// START NEWS PAGE  BY BASEL AHMED 
+
+
+
+// END NEWS PAGE  BY BASEL AHMED  
