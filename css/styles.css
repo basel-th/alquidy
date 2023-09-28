@@ -1752,7 +1752,7 @@ cursor: pointer;
 
 @media(max-width:992px){
   .page-news .container .silder {
-    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    grid-template-columns: auto;
     gap: 10px;
   }
 
