@@ -355,10 +355,6 @@ cursor: pointer;
 
 }
 
-
-
-
-
 /*  END HEADER  BY BASEL AHMED  */
 
 /*  START SILDE BY BASEL AHMED  */
@@ -1432,6 +1428,14 @@ cursor: pointer;
 .patartens .silder .see_more {
   padding: 20px 0;
   width: 100%;
+}
+
+@media(max-width:992px){
+  
+.patartens .silder .see_more {
+  display: none;
+}
+
 }
 .patartens .silder .see_more a {
   color: white ;
