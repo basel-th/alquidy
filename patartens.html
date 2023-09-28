@@ -259,6 +259,8 @@
      
      
      </span>
+
+   
    </div>
    </div>
  </div>
@@ -452,7 +454,26 @@
   
   
   // }
-  
+  let IdIcon = document.getElementById("icon") ;
+let myIdElement = document.getElementById("show_list") ;
+
+var link = document.querySelectorAll(' #show_list li ');
+
+console.log(link[0].textContent);
+
+IdIcon.onclick = function(){
+   myIdElement.classList.toggle("show");
+ }
+
+  for( var i =0 ; i< 6 ; i++){
+    link[i].onclick = function(){
+        myIdElement.classList.remove("show");
+     }
+
+  }
+
+
+
   
   
   

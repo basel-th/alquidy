@@ -658,8 +658,16 @@ cursor: pointer;
   background-size: cover;
 }
 .servers .content .sub-box h2{
-   font-size: 35px;
-   font-weight: bold;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+@media(max-width:992px){
+  .servers .content .sub-box h2{
+     font-size: 25px;
+     font-weight: bolder;
+  }
+
 }
 .servers .content .sub-box p{
   display: none;
@@ -803,7 +811,7 @@ cursor: pointer;
 
 @media(max-width:992px){
   .features .container .content .box p{
-    font-size: 16px;
+    font-size: 15px;
     padding: 0;
   }
  
@@ -938,7 +946,7 @@ cursor: pointer;
     width: auto;
     position: absolute;
     top: -73px;
-    left: -240px;
+    left: -270px;
     z-index: 1;
     /* display: none; */
   }
@@ -952,12 +960,13 @@ cursor: pointer;
 .deatiles .content{
   width: 50%;
   color: white;
-  z-index: 8;
+  z-index: 38;
 }
 @media(max-width:992px){
   .deatiles .content{
     padding: 10px  20px;
     width: 50%;
+    z-index: 100;
     
   }
 
@@ -993,6 +1002,8 @@ cursor: pointer;
   @media(max-width:992px){
     .deatiles .content .bottom {
       padding:  0  6px;
+      font-size: 15px;
+      width: 130px;
     }
   }
   .deatiles .content .bottom:hover {
@@ -1028,12 +1039,13 @@ cursor: pointer;
 
   .news .container .content .side-container{
     display: flex;
-    width: 1200px;
+    width: 1230px;
     overflow-x: auto;
     height: 470px;
     justify-content: center;
     align-items: center;
     padding-right:  20px;
+    background-color: #009688;
   }
   
   @media(max-width:992px){
@@ -1060,15 +1072,13 @@ cursor: pointer;
   }
   .news .container .content .side-container  div{
     display: grid;
-    grid-template-columns: auto auto ;
+    grid-template-columns: auto auto auto ;
     grid-gap: 10px;
     padding: 10px;
   }
   @media(max-width:992px){
     .news .container .content .side-container  div{
-      display: grid;
-      grid-template-columns: auto  auto;
-      grid-gap: 10px;
+      
     }
     
   }
@@ -1280,6 +1290,8 @@ cursor: pointer;
   align-items: center;
   /* -webkit-overflow-scrolling: touch; */
   padding: 50px 10px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto auto;
   
   
 }
@@ -1354,7 +1366,7 @@ cursor: pointer;
 
 /*  START ABOUT US BY BASEL AHMED  */
 .aboutUs{
-  height: 400px;
+  height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
   
@@ -1369,14 +1381,26 @@ cursor: pointer;
 .aboutUs .container h2{
   font-size: 30px;
   font-weight: bold;
-   padding-bottom: 20px;
+  padding-bottom: 20px;
    border-bottom: 2px solid var(--main-color);
    
+  }
+  @media(max-width:992px){
+    .aboutUs .container h2{
+      font-size: 25px;
+    }
+
   }
   .aboutUs .container p{
     padding:  20px 20px;
     font-size: 25px;
     
+  }
+  @media(max-width:992px){
+    .aboutUs .container p{
+      font-size: 20;
+    }
+
   }
 
   .aboutUs .container .see_more {
@@ -1628,14 +1652,28 @@ cursor: pointer;
 .page-news .container {
   padding: 20px;
 }
+@media(max-width:992px){
+.page-news .container {
+  padding: 10px;
+}
+
+}
 
 .page-news .container .silder {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns:auto auto;
   gap: 40px;
   display: none;
   opacity: 0;
+}
+
+@media(max-width:992px){
+  .page-news .container .silder {
+    grid-template-columns: repeat(auto-fill, minmax(460px, 1fr));
+    gap: 10px;
+  }
+
 }
 .page-news .container .silder.shownnews {
   display: grid;
@@ -1703,6 +1741,11 @@ cursor: pointer;
   font-weight: bold;
   margin: -6px;
   color: white;
+}
+@media(max-width:992px){
+.page-news .container .box .sub-content .icons p  {
+    font-size: 17px;
+}
 }
 .page-news .container .box .sub-content .icons i  {
   font-size: 23px;
@@ -1815,10 +1858,19 @@ cursor: pointer;
 
 .page-patartens .silde-content .silder { 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns:auto auto auto auto auto ;
   gap: 20px;
-  padding: 30px 0;
+  padding: 10px 0;
   display: none;
+}
+
+@media(max-width:992px){
+  .page-patartens .silde-content .silder { 
+    grid-template-columns: auto auto;
+    padding: 10px;
+    
+}
+  
 }
 .page-patartens .silde-content .silder.showPatrtens 
 {
@@ -2022,8 +2074,18 @@ cursor: pointer;
   padding-top: 30px;
   padding: 10px 100px;
   position: relative;
-  
 }
+
+
+@media(max-width:992px){
+.deatilespatartens-page .container{
+  padding: 0px  10px;
+  padding-top: 40px;
+}
+
+
+}
+
 .deatilespatartens-page .container h3{
    font-size: 30px;
    font-weight: bold;
@@ -2066,6 +2128,8 @@ cursor: pointer;
     box-shadow: 0px 12px 13px #00000063;
     z-index: 3;
 }
+
+
   .deatilespatartens-page .container p{
     padding: 30px  10px;
     margin-top: 40px;
@@ -2077,7 +2141,9 @@ cursor: pointer;
     .deatilespatartens-page .container p{
       background-color: var(--main-color);
       color: white;
-      padding: 0;
+      padding: 10px;
+      font-size: 20px;
+
     }
   }
   .deatilespatartens-page .container .contents{
@@ -2115,7 +2181,6 @@ cursor: pointer;
     padding: 50px 10px;
   }
   .aboutuspage .container h3{
-    color: var(--main-color);
     font-size: 30px;
     font-weight: bold;
     padding: 10px 0;
@@ -2125,11 +2190,26 @@ cursor: pointer;
     display: flex;
     
   }
+  
+  @media(max-width:992px){
+  .aboutuspage .container .content{
+    flex-direction: column;
+  }
+
+  }
+
   .aboutuspage .container .content .right {
     width: 50%;
     height: auto;
     padding: 30px;
   }
+
+  @media(max-width:992px){
+    .aboutuspage .container .content .right{
+    width: 100%;
+    }
+  
+    }
   .aboutuspage .container .content .right .image {
     
   }
@@ -2141,6 +2221,15 @@ cursor: pointer;
     width: 50%;
     padding: 30px;
   }
+  
+  @media(max-width:992px){
+  .aboutuspage .container .content .left {
+    width: 100%;
+    background-color: var(--main-color);
+    color: white;
+  }
+
+  }
   .aboutuspage .container .content .left img {
     height: 50px;
     width: 50px;
@@ -2149,6 +2238,14 @@ cursor: pointer;
 
   .aboutuspage .container .contentdown {
     padding: 30px;
+  }
+  
+  @media(max-width:992px){
+  .aboutuspage .container .contentdown {
+    background-color: var(--main-color);
+    color: white;
+  }
+
   }
   .aboutuspage .container .contentdown img {
     height: 50px;
