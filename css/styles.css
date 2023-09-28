@@ -1,6 +1,7 @@
 /*  Strat Varibles  */
 :root {
   --main-color : #751332;
+  --min-gradient:linear-gradient(to bottom, #A72951 , #751332) ;
   --sub-color : #878888;
 }
 
@@ -684,10 +685,16 @@ cursor: pointer;
   -moz-transition: all 0.5s linear ;
   -ms-transition: all 0.5s linear ;
   -o-transition: all 0.5s linear ;
-  box-shadow: 12px 12px var(--main-color);
+  box-shadow: 0px 10px var(--main-color);
   color: white;
   background-color: var(--main-color);
   cursor: pointer;
+  overflow: hidden;
+}
+.servers .content .box img{
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 @media(max-width:992px){
@@ -718,26 +725,43 @@ cursor: pointer;
   display: flex;
   align-items:center;
   justify-content: center;
+  position: relative;
+}
+.servers .content .sub-box::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(117 19 50 / 30%);
+  z-index: 3;
+  border-radius:20px;
+  -webkit-border-radius:20px;
+  -moz-border-radius:20px;
+  -ms-border-radius:20px;
+  -o-border-radius:20px;
 }
 .servers .content :first-child .sub-box {
   background-color: #333;
-  background-image: url(../images/test.jpg);
+  background-image: url(../images/serveres1.jfif);
   background-size: cover;
 }
 
 .servers .content :nth-child(2) .sub-box {
   background-color: #333;
-  background-image: url(../images/test.jpg);
+  background-image: url(../images/severs2.jfif);
   background-size: cover;
 }
 .servers .content :last-child .sub-box {
   background-color: #333;
-  background-image: url(../images/test.jpg);
+  background-image: url(../images/severs3.jfif);
   background-size: cover;
 }
 .servers .content .sub-box h2{
   font-size: 35px;
   font-weight: bold;
+  z-index: 5;
 }
 
 @media(max-width:992px){
@@ -902,6 +926,7 @@ cursor: pointer;
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  position: relative;
 }
 
 .video .container {
@@ -990,8 +1015,8 @@ cursor: pointer;
 
 /* START DETAILED BY BASEL AHMED  */
 .deatiles{
-  background-color: var(--main-color);
-  height: 351px;
+  background-image: linear-gradient(to bottom, #A72951 , #751332);
+  height: 450px;
   padding-top: 20px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -1011,11 +1036,11 @@ cursor: pointer;
   } 
 }
 .deatiles img{
-  height: 500px;
+  height: 666px;
   width: auto;
   position: absolute;
-  top: -100px;
-  left: -67px;
+  top: -145px;
+  left: -200px;
 }
 
 @media(max-width:992px){
@@ -1043,7 +1068,7 @@ cursor: pointer;
 @media(max-width:992px){
   .deatiles .content{
     padding: 10px  20px;
-    width: 50%;
+    width: 70%;
     z-index: 100;
     
   }
@@ -1059,6 +1084,36 @@ cursor: pointer;
     padding-top: 0px;
   }
 
+}
+
+
+.deatiles .content h2{
+  font-size: 40px ;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+@media(max-width:992px){
+  .deatiles .content h2{
+    font-size: 25px;
+   padding-bottom: 5px;
+
+
+  }
+}
+.deatiles .content h3{
+  font-size: 24px;
+  font-weight: 400;
+  padding: 20px 0;
+}
+
+@media(max-width:992px){
+  .deatiles .content h3{
+     font-size: 10px;
+     padding: 6px 0;
+     font-weight: 200;
+
+  }
 }
 .deatiles .content .bottom {
     color: white;
@@ -1079,7 +1134,7 @@ cursor: pointer;
 
   @media(max-width:992px){
     .deatiles .content .bottom {
-      padding:  0  6px;
+      padding:  5px  6px;
       font-size: 15px;
       width: 130px;
     }
@@ -1162,7 +1217,7 @@ cursor: pointer;
   }
   
   .news .container .content .side-container  div .box{
-    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, #A72951 , #751332);
     height: 430px;
     width: 575px;
     display: flex;
@@ -1343,6 +1398,7 @@ cursor: pointer;
   text-align: center;
   
   
+  
 }
 .patartens h2{
   padding-bottom: 10px;
@@ -1351,7 +1407,7 @@ cursor: pointer;
 }
 
 .patartens  .silder{
-  background-color: var(--main-color);
+  background-image: linear-gradient(to bottom, #A72951 , #751332);
   height: auto;
   padding: 40px 0;
   display: flex;
@@ -1506,7 +1562,7 @@ cursor: pointer;
 
 /*  START FOOTER BY BASEL AHMED  */
 .footer{
-  background-color: var(--main-color);
+  background-image: linear-gradient(to bottom, #A72951 , #751332);
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -2261,10 +2317,15 @@ cursor: pointer;
   .aboutuspage{
     padding-top: 5%;
     text-align: center;
+    overflow: hidden;
     
   }
   .aboutuspage .container{
     padding: 50px 10px;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .aboutuspage .container h3{
     font-size: 30px;
@@ -2311,8 +2372,35 @@ cursor: pointer;
   @media(max-width:992px){
   .aboutuspage .container .content .left {
     width: 100%;
-    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, #A72951 , #751332);
     color: white;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .aboutuspage .container .content .left::before {
+    content: "";
+    position: absolute;
+    background-color:white;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 70%;
+
+  }
+  .aboutuspage .container .content .left::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: -21px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
   }
 
   }
@@ -2328,8 +2416,36 @@ cursor: pointer;
   
   @media(max-width:992px){
   .aboutuspage .container .contentdown {
-    background-color: var(--main-color);
+    background-image: linear-gradient(to bottom, #A72951 , #751332);
+    width: 100%;
     color: white;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .aboutuspage .container .contentdown::before {
+    content: "";
+    position: absolute;
+    background-color:white;
+    top: -10px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom-left-radius: 80%;
+    border-bottom-right-radius: 70%;
+
+  }
+  .aboutuspage .container .contentdown::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: -21px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
   }
 
   }
