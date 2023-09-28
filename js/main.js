@@ -243,10 +243,10 @@ boxessubcontent[boxcontitem -  1].classList.toggle('hidden');
   let nextbtn = document.getElementById("nextnews");
 
 
-  scrollcontainer.addEventListener("wheel",(evt)=>{
-     evt.preventDefault();
-     scrollcontainer.scrollLeft += evt.deltY;
-});
+//   scrollcontainer.addEventListener("wheel",(evt)=>{
+//        evt.preventDefault();
+//       scrollcontainer.scrollLeft += evt.deltY;
+// });
 
 nextbtn.addEventListener("click", ()=>
 {

@@ -1204,7 +1204,7 @@ cursor: pointer;
   }
   @media(max-width:992px){
     .news .container .content .side-container  div{
-      
+      grid-template-columns: auto auto auto;
     }
     
   }
