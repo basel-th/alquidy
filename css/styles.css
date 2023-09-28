@@ -222,7 +222,7 @@ a{
 }
 @media (max-width: 992px) {
   .header .containe .links li{
-      margin: 45px;
+      margin: 35px;
   
   }
  .header .containe .links li:first-child{
@@ -236,7 +236,7 @@ a{
   .header .containe .links li:last-child{
     border-bottom: 2px solid var(--main-color);
     background-color: var(--main-color);
-    height: 300px;
+    height: 400px;
     width: auto;
     margin: 0  ;
     padding: 10px;
