@@ -875,6 +875,8 @@ cursor: pointer;
     height: 140px;
     width: auto;
     padding: 10;
+    background-image: linear-gradient(to bottom, #A72951 , #751332);
+    color: white;
 
   }
   
@@ -905,6 +907,21 @@ cursor: pointer;
 .features .container .content .box:hover > img:nth-child(2){
   display: block;
 }
+
+@media(max-width:992px){
+  .features .container .content .box img:first-child{
+    display: none;
+ }
+ .features .container .content .box > img:nth-child(2){
+   display: block;
+ }
+ .features .container .content .box:hover img:first-child{
+   display: none;
+ }
+ .features .container .content .box:hover > img:nth-child(2){
+   display: block;
+ }
+}
 .features .container .content .box  p{
   padding-top: 20px;
   font-size: 24px;
@@ -926,7 +943,6 @@ cursor: pointer;
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  position: relative;
 }
 
 .video .container {
@@ -973,7 +989,7 @@ cursor: pointer;
   -ms-border-radius:20px;
   -o-border-radius:20px;
 }
-.video .container  .play{
+.video .container .play{
   z-index: 7;
   position: static;
 }
@@ -997,7 +1013,6 @@ cursor: pointer;
     
     top: 30%;
     left: 50%;
-  
     font-size: 50px;
   
 }
@@ -1368,10 +1383,8 @@ cursor: pointer;
 .news .container  .pervnews {
 
   display: none;
-
 }  
 }
-
 .news .see_more{
   font-size: 20px;
   font-weight: bold;
@@ -1382,9 +1395,6 @@ cursor: pointer;
   color: black;
 
 }
-
-
-  
   
   /*   END NEWS BY BSAEL AHMED  */
 
@@ -1464,10 +1474,10 @@ cursor: pointer;
   height: 150px;
   width: 150px;
   border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 
 }
@@ -2315,7 +2325,7 @@ cursor: pointer;
   
   @media(max-width:992px){
     .deatilespatartens-page .container p{
-      background-color: var(--main-color);
+      background-image: linear-gradient(to bottom, #A72951 , #751332);
       color: white;
       padding: 70px 20px;
       font-size: 20px;
@@ -2349,7 +2359,30 @@ cursor: pointer;
   .deatilespatartens-page .container .contents{
     text-align: start;
     padding-bottom: 40px;
+
   }
+@media(max-width:992px){
+  .deatilespatartens-page .container .contents{
+    text-align: start;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to bottom, #A72951 , #751332);
+    display: none;
+
+  }
+  .deatilespatartens-page .container p::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    bottom: -21px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+
+  }
+}
+
   .deatilespatartens-page .container .contents h3{
     color: black;
     padding-top: 10px;
@@ -2366,6 +2399,20 @@ cursor: pointer;
     height: 30px;
     width: 30px;
     margin-left: 10px;
+  }
+  .deatilespatartens-page .container .backhome{
+    display: none;
+  }
+  
+  @media(max-width:992px){
+    .deatilespatartens-page .container .backhome{
+      display: block;
+      padding: 22px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
   }
 
 /*  END DETRILES PATRTENS BY BASEL AHMED */
@@ -2511,6 +2558,21 @@ cursor: pointer;
     height: 50px;
     width: 50px;
     cursor: pointer;
+  }
+
+  .aboutuspage .container .backhome{
+    display: none;
+  }
+  
+  @media(max-width:992px){
+    .aboutuspage .container .backhome{
+      display: block;
+      padding: 22px;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    
   }
   
  
