@@ -158,6 +158,7 @@ a{
   .header .containe .links ul{
       display: block;
       height: 100%;
+      width: 90%;
       position: fixed;
       background-color: white;
       right: 100%;
@@ -187,7 +188,7 @@ a{
 
 .header .containe .links .show{
       right: 25%;
-      opacity: 0.9;
+      opacity: 98%;
 }
 
 }
@@ -722,13 +723,13 @@ cursor: pointer;
 }
 .servers .content :first-child .sub-box {
   background-color: #333;
-  background-image: url(../images/serveres1.jfif);
+  background-image: url(../images/server1.jfif);
   background-size: cover;
 }
 
 .servers .content :nth-child(2) .sub-box {
   background-color: #333;
-  background-image: url(../images/severs2.jfif);
+  background-image: url(../images/serve2.jfif);
   background-size: cover;
 }
 .servers .content :last-child .sub-box {
@@ -1278,6 +1279,7 @@ cursor: pointer;
  .news .container .content .side-container  div .box .image {
     height: 70%;
     width: auto;
+    padding: 15px;
 }
  .news .container .content .side-container  div .box .image img{
     height: 100%;
