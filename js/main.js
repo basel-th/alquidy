@@ -228,7 +228,8 @@ boxessubcontent[boxcontitem -  1].classList.toggle('hidden');
    
    play.onclick = function(){
    cover.classList.add('play');
-   video.play(); 
+  //  video.play(); 
+   iframe.play();
   }
    
    
@@ -252,7 +253,7 @@ nextbtn.addEventListener("click", ()=>
 {
   scrollcontainer.style.scrollBehavior ="smooth"
   
-  scrollcontainer.scrollLeft += 990;
+  scrollcontainer.scrollLeft += 1200;
   
   console.log("slmslm");
 }
@@ -260,7 +261,7 @@ nextbtn.addEventListener("click", ()=>
 backbtn.addEventListener("click", ()=>
 { 
    scrollcontainer.style.scrollBehavior ="smooth"
-  scrollcontainer.scrollLeft -= 990; }
+  scrollcontainer.scrollLeft -= 1200; }
 );
 
 
