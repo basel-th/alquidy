@@ -774,6 +774,13 @@ cursor: pointer;
   height: 470px;
   box-shadow: 0px 0px  var(--main-color);
 }
+@media(max-width:992px){
+  .servers .content  .show {
+    height: 500px;
+
+  }
+
+}
 .servers .content  .hidden {
   display: block !important;
 }
