@@ -273,6 +273,9 @@ a{
     /* border-bottom: solid 3px white; */
     font-size: 22PX;
   }
+  .header .containe .links:last-child a:hover{
+    color: white !important;
+  }
 }
 
 .header .containe  #icon{
@@ -1223,7 +1226,7 @@ cursor: pointer;
   .news .container .content .side-container  div{
     display:  flex;
     width: 100%;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     /* background-color: #333; */
 
   }
