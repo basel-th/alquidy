@@ -158,7 +158,6 @@ a{
   .header .containe .links ul{
       display: block;
       height: 100%;
-      width: 100vw;
       position: fixed;
       background-color: white;
       right: 100%;
