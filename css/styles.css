@@ -1194,18 +1194,20 @@ cursor: pointer;
     height: 470px;
   }
 
-  @media(max-width:992px) {
+  /* @media(max-width:992px) {
     .news .container .content .side-container{
-      width: 990;
-      height: auto;
-      /* padding: 0px 20px; */
+      width: 650px;
+      grid-template-columns: auto auto auto auto;
+      height: 400px;
     }
-  }
+  } */
   
   @media(max-width:768px){
     .news .container .content .side-container{
       width:400px;;
       height: 370px;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
       /* padding: 0px 20px; */
       
     }
