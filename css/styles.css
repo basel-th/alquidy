@@ -364,12 +364,7 @@ cursor: pointer;
   -o-transition: opacity 1s;
   z-index: 1;
 }
-@media(max-width:992px){
-  .slider-container2 .side-item{
-    /* overflow: hidden; */
-  }
 
-}
 .slider-container2 .side-item.active{
  opacity: 1;
  z-index: 10;
@@ -413,6 +408,10 @@ cursor: pointer;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
+}
+
+.slider-container2 .side-item .text h2 {
+  font-size: 50px;
 }
 
 @media(max-width:992px){
