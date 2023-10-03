@@ -603,10 +603,7 @@ cursor: pointer;
   color: #FFF ;
   width: 30px; 
   height: 15px;
-
 }
-
-
 
 .slider-controlers .perv{
   float: left;
@@ -788,17 +785,7 @@ cursor: pointer;
   display: block !important;
 }
 
-/* @media(max-width:992px){
-  .servers .content  .hidden {
-    opacity: 1 !important;
-  }
-  
-} */
-
-
 /*  END SERVER SECTION BY BASEL AHMED  */
-
-
 
 /*  STARAT FEATURES BY BASEL AHMED  */
 .features{
@@ -806,10 +793,8 @@ cursor: pointer;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  
 } 
 .features .container h2 {
-
   color: black;
   font-weight: bold;
   border-bottom: 2px solid var(--main-color);
@@ -827,18 +812,13 @@ cursor: pointer;
 
 @media(max-width:992px){
   .features .container .content{
-    /* display: flex;
-    overflow-y: auto; */
-   display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     padding: 20px 0px;
     gap: 20px; 
   }
-  /* .features .container .content::-webkit-scrollbar{
-    /* display: none; */
-  /* }  */
-
 }
+
 .features .container .content .box {
   height: auto;
   width: auto;
@@ -865,14 +845,12 @@ cursor: pointer;
     padding: 10;
     background-image: linear-gradient(to bottom, #A72951 , #751332);
     color: white;
-
   }
-  
 }
+
 .features .container .content .box:hover{
   background-image: linear-gradient(to bottom, #A72951 , #751332);
   color: white;
-  
 }
 
 @media(max-width:992px){
@@ -881,7 +859,6 @@ cursor: pointer;
     width: 45px;
     margin-bottom: 5px;
   }
-
 }
 .features .container .content .box img:first-child{
    display: block;
@@ -1007,19 +984,14 @@ cursor: pointer;
 
 @media(max-width:992px){
   .video .container .cover i{
-    
     top: 30%;
     left: 50%;
     font-size: 50px;
-  
 }
-
 }
 .video .container .cover video {
   width: 100%;
   height: 100%;
-  /* aspect-ratio: ;  serach for it  */
-  
 }
    
 /*  END VIDEO BY BASEL AHMED  */
@@ -1162,7 +1134,6 @@ cursor: pointer;
 
 /*  END  DETAILED BY BASEL AHMED  */
 
-
 /*  START NEWS BY BSAEL AHMED  */
   .news{
     height: auto;
@@ -1170,7 +1141,6 @@ cursor: pointer;
     padding-bottom: 20px;
     text-align: center;
     overflow: hidden;
-    
   }
   .news  h2{
     
@@ -1193,24 +1163,13 @@ cursor: pointer;
     height: 470px;
   }
 
-  /* @media(max-width:992px) {
-    .news .container .content .side-container{
-      width: 650px;
-      grid-template-columns: auto auto auto auto;
-      height: 400px;
-    }
-  } */
-  
   @media(max-width:768px){
     .news .container .content .side-container{
       width:400px;;
       height: 370px;
       display: grid;
       grid-template-columns: auto auto auto auto;
-      /* padding: 0px 20px; */
-      
     }
-    
   }
   .news .container .content .side-container > a {
     display: none;
@@ -1227,28 +1186,11 @@ cursor: pointer;
   .news .container .content .side-container  div{
     display:  flex;
     width: 100%;
-    /* justify-content: space-evenly; */
-    /* background-color: #333; */
-
   }
-  /* @media(max-width:992px){
-    .news .container .content .side-container  div{
-      grid-template-columns: repeat(auto-fill,minmax(400px,1fr));
-    }
-    
-  }
-  @media( max-width:768px) {
-    .news .container .content .side-container  div{
-      grid-template-columns: repeat(auto-fill,minmax(600px,1fr));
-    }
-  } */
-  
-  
   .news .container .content .side-container  div > a {
     width: auto;
     background-color: black;
   }
-
   .news .container .content .side-container  div a{
     background-image: linear-gradient(to bottom, #A72951 , #751332);
     height: 430px;
@@ -1322,7 +1264,6 @@ cursor: pointer;
     justify-content: flex-end;
     align-items: flex-end;
     padding: 20px;
-    
   }
   
   .news .container .content .side-container  div .box .sub-content .icons p  {
@@ -1368,8 +1309,6 @@ cursor: pointer;
   .news .container  .nextnews:hover > img:last-child{
     display: block;
   }
-
-
 
 .news .container  .pervnews {
   padding-right: 20px;
@@ -1419,12 +1358,9 @@ cursor: pointer;
 }
 .news .see_more a{
   color: black;
-
 }
   
-  /*   END NEWS BY BSAEL AHMED  */
-
-
+/*   END NEWS BY BSAEL AHMED  */
 
 /*   START PATARTENTS BY BASEL AHMED  */
 .patartens{
@@ -1432,9 +1368,6 @@ cursor: pointer;
   padding-bottom: 40px;
   height: auto;
   text-align: center;
-  
-  
-  
 }
 .patartens h2{
   padding-bottom: 10px;
@@ -1462,26 +1395,17 @@ cursor: pointer;
   padding: 50px 10px;
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto auto auto;
-  
-  
 }
 
 @media(max-width:992px){
-  
   .patartens  .container{
     flex-direction: column;
     padding: 50px 10px;
-    
   }
-
 }
-
-
 .patartens .container::-webkit-scrollbar {
   width: 0px;
 }
-
-
 .patartens .box {
   display: inline-block;
   background-color: white;
@@ -1505,7 +1429,6 @@ cursor: pointer;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-
 }
 .patartens .box img {
   height: 100%;
@@ -1516,18 +1439,14 @@ cursor: pointer;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
 }
-
 .patartens .silder .see_more {
   padding: 20px 0;
   width: 100%;
 }
-
 @media(max-width:992px){
-  
 .patartens .silder .see_more {
   display: none;
 }
-
 }
 .patartens .silder .see_more a {
   color: white ;
@@ -1537,24 +1456,18 @@ cursor: pointer;
   font-weight: bold;
   cursor: pointer;
 }
-
-
 /*    END  PATARTENTS BY BASEL AHMED  */
-
 
 /*  START ABOUT US BY BASEL AHMED  */
 .aboutUs{
   height: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  
 }
 .aboutUs .container {
-  
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-
 }
 .aboutUs .container h2{
   font-size: 30px;
@@ -2015,9 +1928,6 @@ cursor: pointer;
 
 }
 
-
-
-
 /*  END PAGE NEWS BY BASEL AHMED  */
 
 /*  START PAGE PATARTENS BY BASEL AHMED  */
@@ -2392,8 +2302,8 @@ cursor: pointer;
     text-align: start;
     padding-bottom: 40px;
     background-image: linear-gradient(to bottom, #A72951 , #751332);
+    color: white;
     display: none;
-
   }
   .deatilespatartens-page .container p::after {
     content: "";
